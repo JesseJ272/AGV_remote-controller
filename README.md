@@ -38,3 +38,11 @@ After configuration you can start the script.<br>
 A command prompt like the following will open where you can control your AGV with your keyboard.<br>
 
 ![Screenshot of running remote_controller.py in cmd](https://github.com/JesseJ272/AGV_remote-controller/blob/main/remote_controller.png)
+
+# Sources
+Code from other authors used in this repository:<br>
+<ul>
+	<li>Editor: sourceperl</li>
+	<li>Link to repository: https://github.com/sourceperl/pyModbusTCP</li>
+</ul>
+
