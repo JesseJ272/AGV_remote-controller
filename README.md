@@ -20,5 +20,11 @@ In cmd:<br>
 
 ```
 cd </PATH/TO/YOUR/DIRECTORY>
-git clone 
+git clone https://github.com/JesseJ272/AGV_remote-controller.git
 ```
+
+After git clone open the python script with a code editor to configure the following parameters:
+| parameter | format | description |
+| --- | --- | --- |
+| V_MAX | int |
+| V_MAX_BACK | int |
