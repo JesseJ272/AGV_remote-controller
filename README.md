@@ -36,3 +36,5 @@ After git clone open the python script with a code editor to configure the follo
 
 After configuration you can start the script.<br>
 A command prompt like the following will open where you can control your AGV with your keyboard.<br>
+
+![Screenshot of running remote_controller.py in cmd]()
