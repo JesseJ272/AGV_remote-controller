@@ -15,9 +15,10 @@ The repository contains a simple python-script that lets you control an AGV with
 </ul>
 
 ## Setup
-<p>You can install this script by navigating to the folder where you want to install it and do a git clone.<br>
+You can install this script by navigating to the folder where you want to install it and do a git clone.<br>
 In cmd:<br>
+
 ```
 cd </PATH/TO/YOUR/DIRECTORY>
 git clone 
-</p>
+```
