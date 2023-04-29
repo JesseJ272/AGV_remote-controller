@@ -38,47 +38,47 @@ while True:
         if ((vel_l < V_MAX) and (vel_r < V_MAX)): 
             vel_l += 200
             vel_r += 200
-            print("Left:  %s", vel_l)
-            print("Right:  %s", vel_r)
+            print("velocity left:  %s", vel_l)
+            print("velocity right:  %s", vel_r)
             time.sleep(0.2)
     if keyboard.is_pressed('x'):
         if ((vel_l > V_MAX_BACK) and (vel_r > V_MAX_BACK)): 
             vel_l -= 200
             vel_r -= 200
-            print("Left:  %s", vel_l)
-            print("Right:  %s", vel_r)
+            print("velocity left:  %s", vel_l)
+            print("velocity right:  %s", vel_r)
             time.sleep(0.2)
     if keyboard.is_pressed('s'): 
         vel_l = 0
         vel_r = 0
-        print("Left:  %s", vel_l)
-        print("Right:  %s", vel_r)
+        print("velocity left:  %s", vel_l)
+        print("velocity right:  %s", vel_r)
         time.sleep(0.2)
     #Lenken und vorwaerts
     if keyboard.is_pressed('a'):
         if ((vel_l > 0) and (vel_r > 0) and (vel_l < V_MAX) and (vel_r < V_MAX)):
             vel_r += 200
-            print("Left:  %s", vel_l)
-            print("Right:  %s", vel_r)
+            print("velocity left:  %s", vel_l)
+            print("velocity right:  %s", vel_r)
             time.sleep(0.2)
     if keyboard.is_pressed('d'):
         if ((vel_l > 0) and (vel_r > 0) and (vel_l < V_MAX) and (vel_r < V_MAX)): 
             vel_l += 200
-            print("Left:  %s", vel_l)
-            print("Right:  %s", vel_r)
+            print("velocity left:  %s", vel_l)
+            print("velocity right:  %s", vel_r)
             time.sleep(0.2)
     #Lenken und rueckwaerts
     if keyboard.is_pressed('a'):
         if ((vel_l < 0) and (vel_r < 0) and (vel_l < V_MAX) and (vel_r < V_MAX)):
             vel_l += 200
-            print("Left:  %s", vel_l)
-            print("Right:  %s", vel_r)
+            print("velocity left:  %s", vel_l)
+            print("velocity right:  %s", vel_r)
             time.sleep(0.2)
     if keyboard.is_pressed('d'):
         if ((vel_l < 0) and (vel_r < 0) and (vel_l < V_MAX) and (vel_r < V_MAX)): 
             vel_r += 200
-            print("Left:  %s", vel_l)
-            print("Right:  %s", vel_r)
+            print("velocity left:  %s", vel_l)
+            print("velocity right:  %s", vel_r)
             time.sleep(0.2)
     
     client.write_single_register(VEL_LEFT_ADDR, vel_l)
