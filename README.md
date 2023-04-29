@@ -28,7 +28,11 @@ After git clone open the python script with a code editor to configure the follo
 | --- | --- | --- |
 | V_MAX | int | max velocity [m/min] for driving forward |
 | V_MAX_BACK | int | max velocity [m/min] for driving backwards |
-| VEL_LEFT_ADDR | int | register address for the PLC register where you want to write the left target velocity
-| VEL_RIGHT_ADDR | int | register address for the PLC register where you want to write the right target velocity
-| HOST_IP | string | IP address of your ModbusTCP server
-| PORT | int | port number of the server (default: 502)
+| VEL_LEFT_ADDR | int | register address for the PLC register where you want to write the left target velocity |
+| VEL_RIGHT_ADDR | int | register address for the PLC register where you want to write the right target velocity |
+| HOST_IP | string | IP address of your ModbusTCP server |
+| PORT | int | port number of the server (default is 502) |
+
+
+After configuration you can start the script.<br>
+A command prompt like the following will open where you can control your AGV with your keyboard.<br>
