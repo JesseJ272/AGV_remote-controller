@@ -26,5 +26,9 @@ git clone https://github.com/JesseJ272/AGV_remote-controller.git
 After git clone open the python script with a code editor to configure the following parameters:
 | parameter | format | description |
 | --- | --- | --- |
-| V_MAX | int |
-| V_MAX_BACK | int |
+| V_MAX | int | max velocity for driving forward |
+| V_MAX_BACK | int | max velocity for driving backwards |
+| VEL_LEFT_ADDR | int | register address for the PLC register where you want to write the left target velocity
+| VEL_RIGHT_ADDR | int | register address for the PLC register where you want to write the right target velocity
+| HOST_IP | string | IP address of your ModbusTCP server
+| PORT | int | port number of the server (default: 502)
