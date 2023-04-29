@@ -1,15 +1,22 @@
+#import
 import keyboard
 import time
 from pyModbusTCP.client import ModbusClient
-
-
+#variables
 vel_l = 0
 vel_r = 0
+###########################################
+#PARAMETERS################################
+###########################################
 V_MAX = 3000
 V_MAX_BACK = -2000
 VEL_LEFT_ADDR = 2
 VEL_RIGHT_ADDR = 3
-
+HOST_IP = "0.0.0.0"
+PORT = 502
+###########################################
+###########################################
+###########################################
 
 
 print("This script lets you control your connected AGV with your keyboard.\n")
@@ -23,7 +30,7 @@ print("velocity left:  %s", vel_l)
 print("velocity right:  %s", vel_r)
 
 
-#client = ModbusClient(host="192.168.0.200", port=502, auto_open=True, auto_close=False)
+client = ModbusClient(host=HOST_IP, port=PORT, auto_open=True, auto_close=False)
 
 while True:
     #Gerade vorwaerts, rueckwaerts und stop
@@ -74,6 +81,6 @@ while True:
             print("Right:  %s", vel_r)
             time.sleep(0.2)
     
-    #client.write_single_register(VEL_LEFT_ADDR, vel_l)
-    #client.write_single_register(VEL_RIGHT_ADDR, vel_r)
+    client.write_single_register(VEL_LEFT_ADDR, vel_l)
+    client.write_single_register(VEL_RIGHT_ADDR, vel_r)
         
